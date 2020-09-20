@@ -30,8 +30,6 @@ public class BankAccount {
         if(amount < sum){
             throw  new  LimitException(" Не достаточный баланс на счете ", getAmount());
         }
-
-
         amount = amount -sum;
         System.out.println(" снято: " + sum);
 
